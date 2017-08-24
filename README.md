@@ -22,6 +22,8 @@ bin/zookeeper-server-start.sh config/zookeeper.properties
 bin/kafka-server-start.sh config/server.properties
 
 
+bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic output --from-beginning
+
 cd /opt
 
 java -jar spring-cloud-dataflow-server-local-1.2.3.RELEASE.jar --maven.remote-repositories.repo1.url=http://repo.taiji.com.cn:8081/repository/maven-public/
