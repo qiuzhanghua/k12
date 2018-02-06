@@ -1,3 +1,6 @@
+.DS_Store
+/*.properties
+
 target/
 !.mvn/wrapper/maven-wrapper.jar
 
